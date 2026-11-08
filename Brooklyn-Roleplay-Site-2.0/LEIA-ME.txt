@@ -1,0 +1,29 @@
+BROOKLYN ROLEPLAY — SITE 2.0
+============================
+
+Site 100% estático: sem Supabase, sem banco de dados, sem login e sem WL.
+Funciona em qualquer hospedagem (GitHub Pages, Netlify, Vercel, Hostinger…).
+
+ESTRUTURA
+  index.html                 página única do site
+  CNAME                      domínio brooklynroleplay.com (GitHub Pages)
+  robots.txt / sitemap.xml   pro Google achar o site
+  main/files/css/style.css   visual (cores no topo, em :root)
+  main/files/js/main.js      funções + CONFIG (IP, WhatsApp, Discord, neve)
+  main/files/images/         logo, fundo, banner, personagens e galeria
+
+LOGO NATALINA
+  Salve a logo de Natal como:  main/files/images/logo-natal.png
+  Depois troque em main/files/js/main.js -> CONFIG.logo para essa imagem.
+  Depois do Natal, volte CONFIG.logo para logo.png.
+
+NEVE
+  Em main/files/js/main.js -> CONFIG.natal = false  para desligar.
+
+INSCRIÇÃO
+  O formulário NÃO salva nada. Ele monta a mensagem e abre o WhatsApp
+  oficial (75 99202-6081) já preenchido. A WL e o resultado são feitos lá.
+
+TROCAR IP / LINKS
+  IP: procure 191.96.78.19:22077 no index.html e no main.js.
+  Sistemas e galeria: listas SYSTEMS e GALLERY no topo do main.js.

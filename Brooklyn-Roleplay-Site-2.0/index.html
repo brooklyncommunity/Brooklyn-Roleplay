@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brooklyn Roleplay — Servidor de RP brasileiro no MTA:SA</title>
+  <meta name="description" content="Brooklyn Roleplay: servidor brasileiro de roleplay para MTA:SA. Sistemas próprios, concessionária, tunagem, empregos, celular e muito mais. Closed Beta aberto — conecte em 191.96.78.19:22077." />
+  <meta name="theme-color" content="#ff6a00" />
+  <link rel="canonical" href="https://brooklynroleplay.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brooklynroleplay.com/" />
+  <meta property="og:title" content="Brooklyn Roleplay — Closed Beta" />
+  <meta property="og:description" content="A cidade abriu. Sistemas próprios, economia viva e histórias que ficam. Entre no servidor e no nosso Discord." />
+  <meta property="og:image" content="https://brooklynroleplay.com/main/files/images/og-banner.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="main/files/images/favicon.png" />
+  <link rel="apple-touch-icon" href="main/files/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main/files/css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Ícones -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-discord" viewBox="0 0 24 24"><path fill="currentColor" d="M20.32 4.37a19.8 19.8 0 0 0-4.89-1.52.07.07 0 0 0-.08.04c-.21.38-.44.87-.61 1.25a18.3 18.3 0 0 0-5.49 0 12.6 12.6 0 0 0-.62-1.25.08.08 0 0 0-.08-.04 19.7 19.7 0 0 0-4.88 1.52.07.07 0 0 0-.03.03C.53 9.05-.32 13.58.1 18.06a.08.08 0 0 0 .03.06 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .09-.03c.46-.63.87-1.3 1.22-1.99a.08.08 0 0 0-.04-.1 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1-.01-.12l.37-.3a.07.07 0 0 1 .08-.01c3.93 1.8 8.18 1.8 12.06 0a.07.07 0 0 1 .08.01l.37.3a.08.08 0 0 1-.01.12c-.6.35-1.22.65-1.87.9a.08.08 0 0 0-.04.1c.36.7.77 1.36 1.22 1.99a.08.08 0 0 0 .09.03 19.8 19.8 0 0 0 6-3.03.08.08 0 0 0 .03-.06c.5-5.18-.84-9.67-3.55-13.66a.06.06 0 0 0-.03-.03ZM8.02 15.33c-1.18 0-2.16-1.09-2.16-2.42s.96-2.42 2.16-2.42c1.21 0 2.18 1.1 2.16 2.42 0 1.33-.96 2.42-2.16 2.42Zm7.97 0c-1.18 0-2.15-1.09-2.15-2.42s.95-2.42 2.15-2.42c1.21 0 2.18 1.1 2.16 2.42 0 1.33-.95 2.42-2.16 2.42Z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.27 0 .53.04.78.12V9.75a5.75 5.75 0 1 0 4.92 5.69V9.1A7.3 7.3 0 0 0 19.8 10.5V7.4a4.3 4.3 0 0 1-3.2-1.6Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L2.8 21.2l4.6-1.2A9.2 9.2 0 1 0 12 2.8Z"/><path fill="currentColor" d="M8.9 7.4c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.5l-.5.6c-.1.1-.2.3 0 .5.4.7 1 1.4 1.6 1.9.6.5 1.2.8 1.8 1.1.2.1.4 0 .5-.1l.7-.8c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.9-.2 1.5-.3.6-1.4 1.2-2 1.2-.5.1-1.2.1-3.6-.9-2.7-1.2-4.4-3.9-4.5-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.2.5-.3.7-.3h.4Z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="3"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></g></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4Zm9.5-13.5 4 4"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2v5m6-5v5M6 7h12v4a6 6 0 0 1-12 0V7Zm6 10v5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 11h16v10H4zM3 7h18v4H3zM12 7v14M12 7S10.5 3 8 3a2 2 0 0 0 0 4m4 0s1.5-4 4-4a2 2 0 0 1 0 4"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></g></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0L5 7Zm14 0-3 7a3 3 0 0 0 6 0l-3-7Z"/></symbol>
+    <symbol id="i-pix" viewBox="0 0 24 24"><path fill="currentColor" d="M17.6 17.2a2.7 2.7 0 0 1-1.9-.8l-2.8-2.8a.5.5 0 0 0-.7 0l-2.8 2.8a2.7 2.7 0 0 1-1.9.8h-.6l3.6 3.6a2.9 2.9 0 0 0 4 0l3.6-3.6h-.5ZM7.5 6.8c.7 0 1.4.3 1.9.8l2.8 2.8c.2.2.5.2.7 0l2.8-2.8c.5-.5 1.2-.8 1.9-.8h.4l-3.6-3.6a2.9 2.9 0 0 0-4 0L6.8 6.8h.7Zm13.3 3.2-2.2-2.2h-1c-.5 0-.9.2-1.3.5L13.5 11a2.1 2.1 0 0 1-3 0L7.7 8.3c-.3-.3-.8-.5-1.3-.5H5.2L3 10a2.9 2.9 0 0 0 0 4l2.2 2.2h1.2c.5 0 .9-.2 1.3-.5l2.8-2.8a2.2 2.2 0 0 1 3 0l2.8 2.8c.4.3.8.5 1.3.5h1l2.2-2.2a2.9 2.9 0 0 0 0-4Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 6-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+  </svg>
+
+  <div class="bg" aria-hidden="true"></div>
+  <div class="glow glow--a" aria-hidden="true"></div>
+  <div class="glow glow--b" aria-hidden="true"></div>
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container" style="position:relative">
+      <div class="header__bar">
+        <a href="#inicio" class="brand" aria-label="Brooklyn Roleplay — início">
+          <img src="main/files/images/logo.png" alt="" class="js-logo" />
+          <span class="brand__text"><strong>Brooklyn</strong><em>Roleplay</em></span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#sistemas">Sistemas</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#como-entrar">Como entrar</a>
+          <a href="#inscricao">Whitelist</a>
+          <a href="#apoiar">Apoiar</a>
+          <a href="#redes">Redes</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="https://discord.gg/Z6g32S2Fvn" target="_blank" rel="noopener" class="btn btn--glass hide-sm">
+            <svg><use href="#i-discord"/></svg><span>Discord</span>
+          </a>
+          <a href="mtasa://191.96.78.19:22077" class="btn btn--primary hide-sm js-connect">
+            <svg><use href="#i-play"/></svg><span>Jogar</span>
+          </a>
+          <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="pill" data-reveal><span class="dot"></span>Closed Beta aberto<span class="sep"></span>18+<span class="sep"></span>MTA:SA</span>
+
+          <h1 class="hero__title" data-reveal data-delay="1">
+            <span>Brooklyn</span>
+            <span class="outline">Roleplay</span>
+          </h1>
+
+          <p class="hero__text" data-reveal data-delay="2">
+            A cidade abriu as portas. <strong>Sistemas 100% próprios</strong>, economia viva,
+            empregos, concessionária, tunagem e um celular de verdade no bolso.
+            Aqui a sua história <strong>começa e fica</strong>.
+          </p>
+
+          <div class="hero__ctas" data-reveal data-delay="3">
+            <a href="mtasa://191.96.78.19:22077" class="btn btn--primary btn--lg js-connect">
+              <svg><use href="#i-play"/></svg><span>Conectar ao servidor</span>
+            </a>
+            <a href="https://discord.gg/Z6g32S2Fvn" target="_blank" rel="noopener" class="btn btn--glass btn--lg">
+              <svg><use href="#i-discord"/></svg><span>Entrar no Discord</span>
+            </a>
+          </div>
+
+          <div class="ipcard glass" data-reveal data-delay="4">
+            <div class="ipcard__info">
+              <div class="ipcard__label">IP do servidor</div>
+              <div class="ipcard__ip">191.96.78.19:22077</div>
+            </div>
+            <div class="ipcard__btns">
+              <button class="icon-btn" data-copy="191.96.78.19:22077" data-toast="IP copiado! Cole no Quick Connect do MTA." aria-label="Copiar IP"><svg><use href="#i-copy"/></svg></button>
+              <a class="icon-btn icon-btn--solid js-connect" href="mtasa://191.96.78.19:22077" aria-label="Conectar"><svg><use href="#i-play"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__halo"></div>
+          <img class="hero__mark" src="main/files/images/logo.png" alt="" />
+          <div class="chars">
+            <img class="char char--1" src="main/files/images/personagens/p1.webp" alt="" />
+            <img class="char char--3" src="main/files/images/personagens/p3.webp" alt="" />
+            <img class="char char--2" src="main/files/images/personagens/p2.webp" alt="" />
+            <img class="char char--4" src="main/files/images/personagens/p4.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-hint"><span>Role</span><i></i></a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Brooklyn Roleplay</span><em>✦</em><span>Closed Beta</span><em>✦</em><span>191.96.78.19:22077</span><em>✦</em><span>Sistemas próprios</span><em>✦</em><span>bkrp.gg</span><em>✦</em>
+        <span>Brooklyn Roleplay</span><em>✦</em><span>Closed Beta</span><em>✦</em><span>191.96.78.19:22077</span><em>✦</em><span>Sistemas próprios</span><em>✦</em><span>bkrp.gg</span><em>✦</em>
+      </div>
+    </div>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about__text">
+          <span class="eyebrow" data-reveal>Sobre a cidade</span>
+          <h2 class="h2" data-reveal data-delay="1">Uma cidade<br />feita pra <em>jogar.</em></h2>
+          <p data-reveal data-delay="2">
+            O Brooklyn Roleplay nasceu com um objetivo claro: ser o melhor RP brasileiro do MTA.
+            Nada de script pronto de loja — <strong>cada painel, cada HUD e cada sistema foi feito do zero</strong>
+            pela nossa equipe, com a cara do Brooklyn.
+          </p>
+          <p data-reveal data-delay="3">
+            Crie até três personagens, arrume um emprego, compre seu carro na concessionária,
+            tune na oficina e viva o corre do jeito que quiser. A cidade se move com você.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat glass" data-reveal><div class="stat__num">100%</div><div class="stat__label">Sistemas autorais, feitos do zero</div></div>
+          <div class="stat glass" data-reveal data-delay="1"><div class="stat__num">3</div><div class="stat__label">Personagens por conta, troca rápida</div></div>
+          <div class="stat glass" data-reveal data-delay="2"><div class="stat__num">7+</div><div class="stat__label">Empresas na agência de empregos</div></div>
+          <div class="stat glass" data-reveal data-delay="3"><div class="stat__num">18+</div><div class="stat__label">Comunidade adulta e RP sério</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SISTEMAS ================= -->
+    <section class="section" id="sistemas">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow" data-reveal>Por dentro do servidor</span>
+            <h2 class="h2" data-reveal data-delay="1">Sistemas que <em>você vai usar</em></h2>
+          </div>
+          <p class="lead" data-reveal data-delay="2">Prints reais, direto do jogo. Clica em cada sistema pra ver.</p>
+        </div>
+
+        <div class="systems" data-reveal>
+          <div class="systems__list glass" id="sysList" role="tablist" aria-label="Sistemas"></div>
+          <div class="systems__view glass">
+            <div class="sys-shot" id="sysShot"><img id="sysImg" src="main/files/images/galeria/criacao-personagem.webp" alt="" /></div>
+            <div class="sys-info">
+              <h3 id="sysTitle">Criação de personagem</h3>
+              <p id="sysText"></p>
+              <div class="tags" id="sysTags"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow" data-reveal>Galeria</span>
+            <h2 class="h2" data-reveal data-delay="1">Um pouco <em>da cidade</em></h2>
+          </div>
+          <p class="lead" data-reveal data-delay="2">Clique em qualquer imagem pra ampliar.</p>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ================= COMO ENTRAR ================= -->
+    <section class="section" id="como-entrar">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow" data-reveal>Primeiros passos</span>
+            <h2 class="h2" data-reveal data-delay="1">Como <em>entrar</em></h2>
+          </div>
+          <p class="lead" data-reveal data-delay="2">Três passos e você está na cidade.</p>
+        </div>
+        <div class="steps">
+          <article class="step glass" data-reveal>
+            <span class="step__num">01</span>
+            <div class="step__icon"><svg><use href="#i-download"/></svg></div>
+            <h3>Instale o MTA:SA</h3>
+            <p>Você precisa do GTA San Andreas (PC) e do Multi Theft Auto, que é gratuito.</p>
+            <a href="https://multitheftauto.com/" target="_blank" rel="noopener" class="btn btn--glass"><span>Baixar MTA</span><svg><use href="#i-out"/></svg></a>
+          </article>
+          <article class="step glass" data-reveal data-delay="1">
+            <span class="step__num">02</span>
+            <div class="step__icon"><svg><use href="#i-pen"/></svg></div>
+            <h3>Faça a WL</h3>
+            <p>Preencha a inscrição básica e envie pro nosso WhatsApp. A WL e o resultado chegam por lá.</p>
+            <a href="#inscricao" class="btn btn--glass"><span>Ir pra inscrição</span><svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="step glass" data-reveal data-delay="2">
+            <span class="step__num">03</span>
+            <div class="step__icon"><svg><use href="#i-plug"/></svg></div>
+            <h3>Conecte e jogue</h3>
+            <p>Clique em conectar ou abra o MTA, vá em <em>Quick Connect</em> e cole <code>191.96.78.19:22077</code>.</p>
+            <a href="mtasa://191.96.78.19:22077" class="btn btn--primary js-connect"><svg><use href="#i-play"/></svg><span>Conectar</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSCRIÇÃO ================= -->
+    <section class="section" id="inscricao">
+      <div class="container signup">
+        <div class="signup__side">
+          <span class="eyebrow" data-reveal>Whitelist oficial</span>
+          <h2 class="h2" data-reveal data-delay="1">Bora fazer parte <em>do Brooklyn?</em></h2>
+          <p class="lead" data-reveal data-delay="2">
+            A WL começa aqui: preencha a inscrição básica e ela vai direto pro nosso
+            WhatsApp oficial. Lá a equipe te manda a WL e te passa o resultado.
+          </p>
+          <ol class="wlflow" data-reveal data-delay="3">
+            <li class="glass"><b>01</b><div><strong>Inscrição básica</strong><span>Preencha o formulário aqui no site.</span></div></li>
+            <li class="glass"><b>02</b><div><strong>WL pelo WhatsApp</strong><span>Você envia a inscrição e recebe as perguntas da WL por lá.</span></div></li>
+            <li class="glass"><b>03</b><div><strong>Resultado e liberação</strong><span>Aprovado, é só conectar e entrar na cidade.</span></div></li>
+          </ol>
+          <div class="notice glass" data-reveal data-delay="4">
+            <svg><use href="#i-shield"/></svg>
+            <span>Este site <strong>não guarda nenhum dado</strong>. Sua inscrição sai do seu navegador direto pra conversa no WhatsApp — nada fica salvo aqui.</span>
+          </div>
+        </div>
+
+        <form class="form glass" id="signupForm" novalidate data-reveal data-delay="1">
+          <div class="form__grid">
+            <div class="field">
+              <label for="f-nome">Seu nome ou apelido <i>*</i></label>
+              <input id="f-nome" name="nome" type="text" maxlength="60" placeholder="Como te chamamos?" required />
+            </div>
+            <div class="field">
+              <label for="f-idade">Idade <i>*</i></label>
+              <input id="f-idade" name="idade" type="number" min="18" max="99" inputmode="numeric" placeholder="Ex: 21" required />
+            </div>
+            <div class="field">
+              <label for="f-discord">Usuário do Discord <i>*</i></label>
+              <input id="f-discord" name="discord" type="text" maxlength="40" placeholder="Ex: kira.lyma" required />
+            </div>
+            <div class="field">
+              <label for="f-personagem">Nome do personagem <i>*</i></label>
+              <input id="f-personagem" name="personagem" type="text" maxlength="50" placeholder="Ex: Kira Lyma" required />
+            </div>
+            <div class="field">
+              <label for="f-exp">Experiência com RP <i>*</i></label>
+              <select id="f-exp" name="experiencia" required>
+                <option value="">Selecione…</option>
+                <option>Nunca joguei RP</option>
+                <option>Menos de 6 meses</option>
+                <option>De 6 meses a 2 anos</option>
+                <option>Mais de 2 anos</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-origem">Como conheceu o Brooklyn?</label>
+              <select id="f-origem" name="origem">
+                <option value="">Selecione…</option>
+                <option>Discord</option>
+                <option>TikTok</option>
+                <option>Instagram</option>
+                <option>YouTube</option>
+                <option>Indicação de amigo</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="f-historia">Conte um pouco do seu personagem <i>*</i></label>
+              <textarea id="f-historia" name="historia" maxlength="800" placeholder="Quem ele é, de onde vem, o que busca na cidade…" required></textarea>
+              <span class="field__count"><span id="histCount">0</span>/800</span>
+            </div>
+            <div class="field field--full">
+              <label class="check" id="f-regras-wrap"><input type="checkbox" id="f-regras" name="regras" required /><span>Confirmo que tenho 18 anos ou mais e vou respeitar as regras do servidor.</span></label>
+            </div>
+          </div>
+
+          <div class="form__actions">
+            <button type="submit" class="btn btn--wpp btn--lg"><svg><use href="#i-whatsapp"/></svg><span>Enviar inscrição no WhatsApp</span></button>
+          </div>
+          <p class="form__hint">O WhatsApp abre com a inscrição já escrita — é só apertar enviar. Requisitos: 18+, estar no Discord e respeitar as regras.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= APOIAR ================= -->
+    <section class="section" id="apoiar">
+      <div class="container support">
+        <div>
+          <span class="eyebrow" data-reveal>Apoie o projeto</span>
+          <h2 class="h2" data-reveal data-delay="1">Ajude a cidade <em>a crescer.</em></h2>
+          <p class="lead" data-reveal data-delay="2">
+            Todo sistema aqui exige tempo, dedicação e hospedagem. Qualquer valor via Pix ajuda a manter
+            o servidor ligado e o desenvolvimento rodando. <strong>Não é compra de VIP e não é pay-to-win</strong> — é apoio voluntário.
+          </p>
+          <div class="perks">
+            <div class="perk glass" data-reveal><svg><use href="#i-star"/></svg><div><strong>Tag exclusiva</strong><span>Destaque no Discord</span></div></div>
+            <div class="perk glass" data-reveal data-delay="1"><svg><use href="#i-gift"/></svg><div><strong>Surpresa no beta</strong><span>Mimo pro seu personagem</span></div></div>
+            <div class="perk glass" data-reveal data-delay="2"><svg><use href="#i-server"/></svg><div><strong>Apoio direto</strong><span>Vai pra host e dev</span></div></div>
+            <div class="perk glass" data-reveal data-delay="3"><svg><use href="#i-scale"/></svg><div><strong>Jogo justo</strong><span>Sem pay-to-win</span></div></div>
+          </div>
+        </div>
+
+        <aside class="pix glass" data-reveal data-delay="1">
+          <div class="pix__head">
+            <div class="pix__icon"><svg><use href="#i-pix"/></svg></div>
+            <div><h3>PIX</h3><span>Apoio instantâneo</span></div>
+          </div>
+          <span class="pix__label">Chave Pix (CPF)</span>
+          <div class="pix__key">
+            <code>56347592851</code>
+            <button class="icon-btn icon-btn--solid" data-copy="56347592851" data-toast="Chave Pix copiada!" aria-label="Copiar chave Pix"><svg><use href="#i-copy"/></svg></button>
+          </div>
+          <div class="pix__rows">
+            <div><span>Favorecido</span><span>Brooklyn Roleplay</span></div>
+            <div><span>Finalidade</span><span>Apoio ao projeto</span></div>
+          </div>
+          <p class="pix__note"><strong>Depois de enviar</strong>, manda o comprovante no Discord ou no WhatsApp oficial pra receber sua tag de apoiador.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= REDES ================= -->
+    <section class="section" id="redes">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow" data-reveal>Redes oficiais</span>
+            <h2 class="h2" data-reveal data-delay="1">Segue a <em>gente</em></h2>
+          </div>
+          <p class="lead" data-reveal data-delay="2">Clipes, novidades, eventos e bastidores do Brooklyn. Tudo em <strong>@bkrp.gg</strong>.</p>
+        </div>
+        <div class="socials">
+          <a class="social glass" style="--c:#5865f2" href="https://discord.gg/Z6g32S2Fvn" target="_blank" rel="noopener" data-reveal>
+            <svg class="social__go"><use href="#i-out"/></svg>
+            <div class="social__icon"><svg><use href="#i-discord"/></svg></div>
+            <div><strong>Discord</strong><span>Comunidade oficial</span></div>
+          </a>
+          <a class="social glass" style="--c:#ff0033" href="https://youtube.com/@bkrp_gg" target="_blank" rel="noopener" data-reveal data-delay="1">
+            <svg class="social__go"><use href="#i-out"/></svg>
+            <div class="social__icon"><svg><use href="#i-youtube"/></svg></div>
+            <div><strong>YouTube</strong><span>@bkrp_gg</span></div>
+          </a>
+          <a class="social glass" style="--c:#1a1a1a" href="https://www.tiktok.com/@bkrp.gg" target="_blank" rel="noopener" data-reveal data-delay="2">
+            <svg class="social__go"><use href="#i-out"/></svg>
+            <div class="social__icon" style="background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)"><svg><use href="#i-tiktok"/></svg></div>
+            <div><strong>TikTok</strong><span>@bkrp.gg</span></div>
+          </a>
+          <a class="social glass" style="--c:#e1306c" href="https://www.instagram.com/bkrp.gg" target="_blank" rel="noopener" data-reveal data-delay="3">
+            <svg class="social__go"><use href="#i-out"/></svg>
+            <div class="social__icon" style="background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)"><svg><use href="#i-instagram"/></svg></div>
+            <div><strong>Instagram</strong><span>@bkrp.gg</span></div>
+          </a>
+          <a class="social glass" style="--c:#25d366" href="https://wa.me/5575992026081" target="_blank" rel="noopener" data-reveal data-delay="4">
+            <svg class="social__go"><use href="#i-out"/></svg>
+            <div class="social__icon"><svg><use href="#i-whatsapp"/></svg></div>
+            <div><strong>WhatsApp</strong><span>(75) 99202-6081</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="section" style="padding-top:20px">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <div class="cta__bg" aria-hidden="true"></div>
+          <div class="cta__content">
+            <span class="eyebrow">Closed Beta</span>
+            <h2 class="h2">A cidade tá<br /><em>te esperando.</em></h2>
+            <p class="lead">Conecte agora e comece a escrever sua história no Brooklyn.</p>
+            <div class="hero__ctas">
+              <a href="mtasa://191.96.78.19:22077" class="btn btn--primary btn--lg js-connect"><svg><use href="#i-play"/></svg><span>Conectar ao servidor</span></a>
+              <button class="btn btn--glass btn--lg" data-copy="191.96.78.19:22077" data-toast="IP copiado!"><svg><use href="#i-copy"/></svg><span>Copiar IP</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a href="#inicio" class="brand">
+            <img src="main/files/images/logo.png" alt="" class="js-logo" />
+            <span class="brand__text"><strong>Brooklyn</strong><em>Roleplay</em></span>
+          </a>
+          <p>Servidor brasileiro de roleplay para Multi Theft Auto: San Andreas. Sistemas próprios, comunidade 18+.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#sistemas">Sistemas</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#inscricao">Whitelist</a></li>
+            <li><a href="#apoiar">Apoiar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Servidor</h4>
+          <ul>
+            <li><a href="mtasa://191.96.78.19:22077" class="js-connect">Conectar</a></li>
+            <li><button data-copy="191.96.78.19:22077" data-toast="IP copiado!">191.96.78.19:22077</button></li>
+            <li><a href="https://multitheftauto.com/" target="_blank" rel="noopener">Baixar MTA:SA</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://discord.gg/Z6g32S2Fvn" target="_blank" rel="noopener">Discord oficial</a></li>
+            <li><a href="https://wa.me/5575992026081" target="_blank" rel="noopener">WhatsApp (75) 99202-6081</a></li>
+            <li><a href="https://www.instagram.com/bkrp.gg" target="_blank" rel="noopener">Instagram @bkrp.gg</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Brooklyn Roleplay · brooklynroleplay.com</span>
+        <span>Projeto independente. Não afiliado à Rockstar Games, Take-Two ou ao MTA:SA.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <button class="lightbox__close" id="lbClose" aria-label="Fechar"><svg><use href="#i-close"/></svg></button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior"><svg><use href="#i-left"/></svg></button>
+    <figure><img id="lbImg" src="" alt="" /><figcaption id="lbCap"></figcaption></figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima"><svg><use href="#i-right"/></svg></button>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo"><svg><use href="#i-up"/></svg></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="main/files/js/main.js"></script>
+</body>
+</html>
